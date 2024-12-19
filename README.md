@@ -1,2 +1,2 @@
 # CoMeDi_Solution
-Our Solution to CoMeDi. The code is soon~
+Our Solution to [CoMeDi](https://comedinlp.github.io/). The code is soon.
