@@ -1,4 +1,4 @@
-# CoMeDi_Solution ![Static Badge](https://img.shields.io/badge/license%2CMIT%2Cgreen)
+# CoMeDi_Solution ![Static Badge](https://img.shields.io/badge/license-MIT-green)
 
 Our Solution to [CoMeDi](https://comedinlp.github.io/). The code is soon.
 
