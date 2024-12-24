@@ -1,6 +1,6 @@
 # CoMeDi_Solution ![Static Badge](https://img.shields.io/badge/license-MIT-green) ![Static Badge](https://img.shields.io/badge/COLING-2025-blue)
 
-Our Solution to [CoMeDi](https://comedinlp.github.io/). The code is soon.
+Our Solution to [CoMeDi](https://comedinlp.github.io/). 
 
 ## Subtask 1
 ### 🌟 MLP-based method for Subtask 1
@@ -108,4 +108,4 @@ submission_path_list = [
 metric = "STD" # Other choices: "MDP", "VR"
 ```  
 ## Others
-🌟 some results:[GoogleDrive](https://drive.google.com/drive/folders/1EQ6SZftkrdIEjY8nXvzG7WSqwHRal8LH?usp=sharing).
+🌟 some results: [GoogleDrive](https://drive.google.com/drive/folders/1EQ6SZftkrdIEjY8nXvzG7WSqwHRal8LH?usp=sharing).
