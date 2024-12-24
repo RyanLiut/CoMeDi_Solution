@@ -108,5 +108,4 @@ submission_path_list = [
 metric = "STD" # Other choices: "MDP", "VR"
 ```  
 ## Others
-🌟 our paper link:  
-🌟 some results:
+🌟 some results:[GoogleDrive](https://drive.google.com/drive/folders/1EQ6SZftkrdIEjY8nXvzG7WSqwHRal8LH?usp=sharing).
