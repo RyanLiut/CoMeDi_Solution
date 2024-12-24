@@ -36,7 +36,7 @@ path_train = '../prompt_data/train/'
 ```
 ⚡ if prompt data is not generated in advance, please run:
 ```
-subtask_1/prompt_data/add_prompt.py
+python subtask_1/prompt_data/add_prompt.py
 ```
 
 ## Subtask 2
@@ -65,5 +65,5 @@ batch_size = 32
 ### 🌟 Threshold-based method for Subtask 2
 
 ## Others
-🌟 our paper link:
+🌟 our paper link:  
 🌟 some results:
