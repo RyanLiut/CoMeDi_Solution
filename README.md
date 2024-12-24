@@ -63,7 +63,28 @@ epoch_num = 200
 batch_size = 32
 ```
 ### 🌟 Threshold-based method for Subtask 2
-
+The ground truth of training data needs to be calculated manually, that is, the mode of annotator is used.  
+```python 
+judgments = eval(row['judgments'])
+# print(judgments) 
+median_cleaned = max(stats.mode(judgments).mode, 1)
+```  
+Then merge the different model result files and run the code:  
+``` 
+python subtask_2/thr_based/ensemble.py
+```
+⚠ Relevant file parameters and fused metric need to be changed:
+```python 
+ROOT_DIR = "/home/liuzhu/CoMeDi_Solution"
+out_dir = ROOT_DIR + "/subtask_2/answer_ensemble/"
+# Multiple results to ensemble
+submission_path_list = [
+    "/ANSWER_DIR_0",
+    "/ANSWER_DIR_1",
+    "/ANSWER_DIR_2",
+]
+metric = "STD" # Other choices: "MDP", "VR"
+```  
 ## Others
 🌟 our paper link:  
 🌟 some results:
