@@ -3,9 +3,28 @@
 Our Solution to [CoMeDi](https://comedinlp.github.io/). The code is soon.
 
 ## Subtask 1
-
 ### 🌟 MLP-based method for Subtask 1
+A classifier composed of two linear layers with ReLU activation function, is trained using a cross-entropy loss function.  
+Use the following command to start mlp-based method training:  
+```  
+python mlp-based.py
+```
+⚡ Before training, please specify the training data path, model path, and configure specific training parameters:  
+```python 
+# raw data path
+path_dev = '../data/dev/'
+path_train = '../data/train/'
+path_test = '../data/test/'
 
+# your local model path
+tokenizer = AutoTokenizer.from_pretrained("xlm-roberta-base")
+model = XLMRobertaModel.from_pretrained("xlm-roberta-base").to(device)
+
+# the hyperparameters required for training
+learning_rate = 1e-2
+epoch_num = 50
+batch_size = 128
+```
 ### 🌟 Threshold-based method for Subtask 1
 #### Non prompt+LLM method:
 Simply run the file 'threshold.ipynb' directly.
