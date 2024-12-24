@@ -38,7 +38,29 @@ path_train = '../prompt_data/train/'
 ```
 python subtask_1/prompt_data/add_prompt.py
 ```
-
+Specify the model path, model name and selected model layers:   
+```python
+# define and load the tokenizer and model for different choices
+# models can be downloaded from huggingface
+MODEL_PATH = "" # offline model path
+model_name = "xlm-roberta-base"
+LAYER_ID = -1 # choose which layer to extract representations
+device = "cuda"
+tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH + f"/{model_name}")
+if model_name in ["bert-base-multilingual-cased", "bert-large-uncased"]:
+    model = BertModel.from_pretrained(MODEL_PATH + f"/{model_name}").to(device)
+elif model_name in ["xlm-roberta-base", "xlm-roberta-large"]:
+    model = AutoModelForMaskedLM.from_pretrained(MODEL_PATH + f"/{model_name}").to(device)
+elif model_name in ["Llama-7b-hf"]:
+    model = transformers.AutoModel.from_pretrained(MODEL_PATH + f"/{model_name}", device_map="auto").half()
+```
+At the same time, please select the standardization method:  
+```python
+# Anisotropy Removal
+dataframes = [df_train_uses_merged, df_dev_uses_merged]
+file_names = ['subtask1_train_embeddings.npz', 'subtask1_dev_embeddings.npz']
+STANDARD_type = "std" # techniques for anisotropy removal.
+```
 ## Subtask 2
 
 ### 🌟 MLP-based method for Subtask 2
@@ -75,7 +97,7 @@ python subtask_2/thr_based/ensemble.py
 ```
 ⚠ Relevant file parameters and fused metric need to be changed:
 ```python 
-ROOT_DIR = "/home/liuzhu/CoMeDi_Solution"
+ROOT_DIR = "CoMeDi_Solution"
 out_dir = ROOT_DIR + "/subtask_2/answer_ensemble/"
 # Multiple results to ensemble
 submission_path_list = [
