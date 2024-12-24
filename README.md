@@ -34,11 +34,11 @@ You need to change the file path, as follows:
 path_dev = '../prompt_data/dev/'
 path_train = '../prompt_data/train/'
 ```
-⚡ if prompt data is not generated in advance, please run:
+if prompt data is not generated in advance, please run:
 ```
 python subtask_1/prompt_data/add_prompt.py
 ```
-Specify the model path, model name and selected model layers:   
+⚠ Specify the model path, model name and selected model layers:   
 ```python
 # define and load the tokenizer and model for different choices
 # models can be downloaded from huggingface
@@ -54,7 +54,7 @@ elif model_name in ["xlm-roberta-base", "xlm-roberta-large"]:
 elif model_name in ["Llama-7b-hf"]:
     model = transformers.AutoModel.from_pretrained(MODEL_PATH + f"/{model_name}", device_map="auto").half()
 ```
-At the same time, please select the standardization method:  
+⚠ At the same time, please select the standardization method:  
 ```python
 # Anisotropy Removal
 dataframes = [df_train_uses_merged, df_dev_uses_merged]
