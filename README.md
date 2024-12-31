@@ -1,6 +1,6 @@
 # CoMeDi_Solution ![Static Badge](https://img.shields.io/badge/license-MIT-green) ![Static Badge](https://img.shields.io/badge/COLING-2025-blue)
 
-Our Solution to [CoMeDi](https://comedinlp.github.io/). 
+Our Solution to [CoMeDi](https://comedinlp.github.io/): Context and Meaning—Navigating Disagreements in NLP Annotations Workshop to be held in conjunction with [COLING 2025](https://coling2025.org/program/) in Abu Dhabi.
 
 ## Subtask 1
 ### 🌟 MLP-based method for Subtask 1
