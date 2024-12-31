@@ -121,4 +121,9 @@ metric = "STD" # Other choices: "MDP", "VR"
     primaryClass={cs.CL}
 }
 ```
+
+## Acknowledgement
+The code is based on the official code released by [CoMeDi](https://comedinlp.github.io/). We would like to express our gratitude to the authors for the work and code.
+
 If you have any problem or suggestion, please feel free to pose an issue or concat us at [liuzhu22@mails.tsinghua.edu.cn](mailto:liuzhu22@mails.tsinghua.edu.cn).
+
