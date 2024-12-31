@@ -109,3 +109,16 @@ metric = "STD" # Other choices: "MDP", "VR"
 ```  
 ## Others
 🌟 some results: [GoogleDrive](https://drive.google.com/drive/folders/1EQ6SZftkrdIEjY8nXvzG7WSqwHRal8LH?usp=sharing).
+
+## Citation
+```
+@misc{liu2024juniperliu,
+    title={JuniperLiu at CoMeDi Shared Task: Models as Annotators in Lexical Semantics Disagreements},
+    author={Zhu Liu and Zhen Hu and Ying Liu},
+    year={2024},
+    eprint={2411.12147},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+```
+If you have any problem or suggestion, please feel free to pose an issue or concat us at [liuzhu22@mails.tsinghua.edu.cn](mailto:liuzhu22@mails.tsinghua.edu.cn).
